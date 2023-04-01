@@ -1,0 +1,48 @@
+.btn {
+  color: white;
+  border: 1px solid rgba(128, 128, 128, 0.505);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn.big {
+  height: 40px;
+  padding: 8px 14px;
+  font-size: 1.2rem;
+}
+
+.btn.small {
+  height: 30px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+.btn.success {
+  background-color: green;
+}
+
+.btn.danger {
+  background-color: red;
+}
+
+.btn.default {
+  color: black;
+  background-color: transparent;
+}
+
+.btn.inline {
+  display: inline;
+}
+
+.btn.block {
+  display: block;
+}

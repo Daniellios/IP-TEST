@@ -1,0 +1,95 @@
+.list {
+  display: grid;
+  padding: 0.75rem 1rem 2.5rem 1rem;
+  margin-top: 0.75rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  padding: 1.5rem;
+  transition-duration: 300ms;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  border-color: #6b7280;
+  gap: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  height: 360px;
+}
+
+.card:hover {
+  border-color: #f59e0b;
+  cursor: pointer;
+}
+
+.card_text_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.card_image_wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+}
+
+.card_description {
+  display: block;
+  overflow: hidden;
+  min-height: 4.125em;
+  text-overflow: ellipsis;
+  max-height: 4.125em;
+  word-wrap: break-word;
+  line-height: 1.375;
+  -webkit-line-clamp: 3;
+  font-weight: 400;
+}
+
+.card_badge {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0.25rem;
+  background: #6c757d;
+  top: -15px;
+  right: -15px;
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .list {
+    width: 66.666667%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card_badge {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
